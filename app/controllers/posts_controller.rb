@@ -5,6 +5,7 @@ class PostsController < ApplicationController
   # GET /posts.json
   def index
     @posts = Post.all
+
   end
 
   # GET /posts/1
@@ -24,7 +25,7 @@ class PostsController < ApplicationController
   # POST /posts
   # POST /posts.json
   def create
-    @post = Post.new(stuff_name: task_params[:stuff_name], description: task_params[:description], comment: task_params[:comment], user_id: current_user.id)
+    @post = Post.new(stuff_name: post_params[:stuff_name], image: post_params[:image], description: post_params[:description], comment: post_params[:comment], user_id: current_user.id)
 
     respond_to do |format|
       if @post.save
@@ -69,6 +70,6 @@ class PostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.require(:post).permit(:stuff_name, :description, :comment, :user_id, :success)
+      params.require(:post).permit(:stuff_name, :image, :description, :comment, :user_id, :success)
     end
 end

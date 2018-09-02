@@ -5,6 +5,7 @@
 <table>
   <thead>
     <tr>
+      <!-- <th>ユーザー名</th> -->
       <th>名称</th>
       <th>画像</th>
       <th>詳細</th>
@@ -16,8 +17,9 @@
   <tbody>
     <% @posts.each do |post| %>
       <tr>
+        <th></th>
         <td><%= post.stuff_name %></td>
-        <td><%= post.image %></td>
+        <td><%= image_tag(post.image_url) if post.image.present? %></td>
         <td><%= post.description %></td>
         <td><%= post.comment %></td>
 
