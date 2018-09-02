@@ -7,7 +7,7 @@
 
 <p>
   <strong>画像:</strong>
-  <%= @post.image %>
+  <%= image_tag(@post.image_url) if @post.image.present? %>
 </p>
 
 <p>
