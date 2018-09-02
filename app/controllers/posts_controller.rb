@@ -6,6 +6,9 @@ class PostsController < ApplicationController
   def index
     @posts = Post.all
 
+    @posts.each do |post|
+      @username = User.find(post.user_id).username
+    end
   end
 
   # GET /posts/1
