@@ -10,6 +10,22 @@
   </head>
 
   <body>
+
+    <div class="container">
+      <div class="row">
+        <header class="header">
+          <div class="header__bar row">
+            <h1 class="grid-6"><a href="/">Too Match</a></h1>
+            <% if user_signed_in? %>
+              <div class="user_nav grid-6">
+                <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+              </div>
+            <% end %>
+          </div>
+        </header>
+      </div>
+    </div>
+
     <%= yield %>
   </body>
 </html>

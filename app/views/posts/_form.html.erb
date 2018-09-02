@@ -17,6 +17,11 @@
   </div>
 
   <div class="field">
+    <%= form.label :image %>
+    <%= form.file_field :image, id: :book_picture %> <!-- 要編集！！！ -->
+  </div>
+
+  <div class="field">
     <%= form.label :description %>
     <%= form.text_area :description %>
   </div>
@@ -26,7 +31,7 @@
     <%= form.text_area :comment %>
   </div>
 
-  <div class="field">
+  <!-- <div class="field">
     <%= form.label :user_id %>
     <%= form.number_field :user_id %>
   </div>
@@ -34,7 +39,7 @@
   <div class="field">
     <%= form.label :success %>
     <%= form.check_box :success %>
-  </div>
+  </div> -->
 
   <div class="actions">
     <%= form.submit %>

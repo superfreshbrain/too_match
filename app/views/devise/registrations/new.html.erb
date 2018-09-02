@@ -6,6 +6,11 @@
     <%= devise_error_messages! %>
 
     <div class="field">
+      <%= f.label :nickname %><br /> <em>6文字まで</em><br />
+      <%= f.text_field :nickname, autofocus: true, maxlength: "6" %>
+    </div>
+
+    <div class="field">
       <%= f.label :email %><br />
       <%= f.email_field :email %>
     </div>

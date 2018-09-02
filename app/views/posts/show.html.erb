@@ -1,29 +1,24 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Stuff name:</strong>
+  <strong>名称:</strong>
   <%= @post.stuff_name %>
 </p>
 
 <p>
-  <strong>Description:</strong>
+  <strong>画像:</strong>
+  <%= @post.image %>
+</p>
+
+<p>
+  <strong>説明:</strong>
   <%= @post.description %>
 </p>
 
 <p>
-  <strong>Comment:</strong>
+  <strong>コメント:</strong>
   <%= @post.comment %>
 </p>
 
-<p>
-  <strong>User:</strong>
-  <%= @post.user_id %>
-</p>
-
-<p>
-  <strong>Success:</strong>
-  <%= @post.success %>
-</p>
-
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+<%= link_to '編集', edit_post_path(@post) %> |
+<%= link_to '戻る', posts_path %>
