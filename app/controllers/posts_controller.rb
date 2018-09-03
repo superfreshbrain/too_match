@@ -4,7 +4,8 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all
+    @posts = Post.includes(:user).page(params[:page]).per(5).order("created_at DESC")
+    # @tweets = Tweet.includes(:user).page(params[:page]).per(5).order("created_at DESC")
 
     @posts.each do |post|
       @username = User.find(post.user_id).username

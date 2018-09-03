@@ -1,3 +1,77 @@
+# # Additional translations at https://github.com/plataformatec/devise/wiki/I18n
+#
+# en:
+#   devise:
+#     confirmations:
+#       confirmed: "メールアドレスを確認しました。."
+#       send_instructions: "確認のメールが届くのに少し時間がかかります。"
+#       send_paranoid_instructions: "すでに登録されているメールアドレス場合でも確認のメールが届くのに少し時間がかかります。"
+#     failure:
+#       already_authenticated: "サインイン済みです。"
+#       inactive: "あなたのアカウントはまだ登録されていません。"
+#       invalid: "%{authentication_keys}かパスワードが間違っています。"
+#       locked: "あなたのアカウントはロックされました。"
+#       last_attempt: "もう一度間違えるとあなたのアカウントはロックされます。"
+#       not_found_in_database: "ユーザー名かパスワードが間違っています。"
+#       timeout: "一定時間が過ぎました。もう一度ログインしなおしてください。"
+#       unauthenticated: "連続して操作を行うにはサインインまたはサインアップしてください。"
+#       unconfirmed: "連続して操作を行うにはあなたのメールアドレスを確認してください。"
+#     mailer:
+#       confirmation_instructions:
+#         subject: "確認してください。"
+#       reset_password_instructions:
+#         subject: "パスワードをリセットします。"
+#       unlock_instructions:
+#         subject: "解除されました。"
+#       email_changed:
+#         subject: "Eメールを変えてください。"
+#       password_change:
+#         subject: "パスワードを変えてください。"
+#     omniauth_callbacks:
+#       failure: " \"%{reason}\" なので%{kind} の承認されませんでした。"
+#       success: " %{kind} アカウントを承認しました。."
+#     passwords:
+#       no_token: "リセットメールのパスワードなしではこのページにアクセスできません。リセットメールのパスワードがきたら、完全なURLかどうか確かめてください。"
+#       send_instructions: "パスワードをリセットするマールが届くのに少し時間がかかります。"
+#       send_paranoid_instructions: "アドレスが登録済みの場合、パスワード再登録用のメールを送信しました。"
+#       updated: "パスワードが変更されました　サインインしなおしてください。"
+#       updated_not_active: "パスワードが変更されました。"
+#     registrations:
+#       destroyed: "またのご利用をお待ちしています"
+#       signed_up: "ようこそ"
+#       signed_up_but_inactive: "あなたのアカウントは停止されています"
+#       signed_up_but_locked: "あなたのアカウントはロックされています"
+#       signed_up_but_unconfirmed: "メールを送信しました　リンクに従ってください"
+#       update_needs_confirmation: "更新されました　確認用メールから新しいアドレスを再登録してください"
+#       updated: "更新されました"
+#     sessions:
+#       signed_in: "サインインしました"
+#       signed_out: "サインアウトしました"
+#       already_signed_out: "サインアウトしました"
+#     unlocks:
+#       send_instructions: "案内メールをお送りします"
+#       send_paranoid_instructions: "アカウントをお持ちの場合は案内メールを送信します"
+#       unlocked: "アンロックに成功しました　サインインしてください"
+#   errors:
+#     messages:
+#       already_confirmed: "確認できました　サインインしてください"
+#       confirmation_period_expired: %{period}かもう一度確認する必要があります"
+#       expired: "期限が過ぎています　申請し直してください"
+#       not_found: "見つかりませんでした"
+#       not_locked: "ロックされていません"
+#       not_saved:
+#         one: "%{resource}のためエラーが発生しました保存が完了していません"
+#         other: "%{resource}のため%{count}エラーが発生しました保存が完了していません"
+
+
+
+
+
+
+
+
+
+
 # Additional translations at https://github.com/plataformatec/devise/wiki/I18n
 
 en:

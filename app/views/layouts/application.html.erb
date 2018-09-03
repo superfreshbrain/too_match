@@ -11,21 +11,33 @@
 
   <body>
 
-    <div class="container">
-      <div class="row">
-        <header class="header">
-          <div class="header__bar row">
-            <h1 class="grid-6"><a href="/">Too Match</a></h1>
-            <% if user_signed_in? %>
-              <div class="user_nav grid-6">
-                <%= link_to "Logout", destroy_user_session_path, method: :delete %>
-              </div>
-            <% end %>
-          </div>
-        </header>
-      </div>
-    </div>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
 
+        <div class="navbar-header">
+          <h1 class="grid-6"><a href="/"><%= image_tag 'too_match-logo.png' %></a></h1>
+        </div>
+        <% if user_signed_in? %>
+          <div class="user_nav grid-6">
+            <span>
+              <ul class="nav navbar-nav">
+                <li><a href="/users/<%= current_user.id %>">マイページ</a></li>
+                <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
+              </ul>
+            </span>
+            <ul class="nav navbar-nav">
+              <li><%= link_to '投稿する', new_post_path %></li>    
+            </ul>
+          </div>
+        <% else %>
+          <ul class="nav navbar-nav">
+            <li><%= link_to "ログイン", new_user_session_path, :class => 'post' %></li>
+            <li><%= link_to "新規登録", new_user_registration_path, :class => 'post' %></li>
+          </ul>
+        <% end %>
+
+      </div>
+    </nav>
     <%= yield %>
   </body>
 </html>
