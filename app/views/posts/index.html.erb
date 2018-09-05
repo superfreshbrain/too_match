@@ -6,19 +6,20 @@
     <% @posts.each do |post| %>
       <div class="content_post" style="background-image: url(<%= post.image %>);">
 
-<!--        # ユーザーサインイン時 && 自分の投稿のみ削除可能にする-->
-        <% if user_signed_in? && current_user.id == post.user_id %>
-          <div class="more">
+        <div class="more">
 
-<!--                set an arrow image below!!!-->
-<!--                <span><%#= image_tag 'arrow_top.png' %></span>-->
-            <ul class="more_list">
-              <li><%= link_to '表示', post %></li>
+<!--          set an arrow image below!!!-->
+<!--          <span><%#= image_tag 'arrow_top.png' %></span>-->
+          <ul class="more_list">
+            <li><%= link_to '表示', post %></li>
+
+<!--            # deletable only if user is signed in && the one is your post-->
+            <% if user_signed_in? && current_user.id == post.user_id %>
               <li><%= link_to '編集', edit_post_path(post) %></li>
               <li><%= link_to '削除', post, method: :delete, data: { confirm: '削除してよろしいですか?' } %></li>
-            </ul>
-          </div>
-        <% end %>
+            <% end %>
+          </ul>
+        </div>
         <%= simple_format(post.description) %>
         <span class="name">
           <a href="/users/<%= post.user.id %>">
