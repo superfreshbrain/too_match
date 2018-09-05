@@ -10,23 +10,28 @@
       </ul>
     </div>
   <% end %>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3">
+        <div class="field">
+          <%= form.label "名称" %>
+          <%= form.text_field :stuff_name, class: "form-control" %>
+        </div>
 
-  <div class="field">
-    <%= form.label :stuff_name %>
-    <%= form.text_field :stuff_name %>
-  </div>
+        <div class="field">
+          <%= form.label "画像" %>
+          <%= form.file_field :image, id: :post_image, class: "form-control" %>
+        </div>
 
-  <div class="field">
-    <%= form.label :image %>
-    <%= form.file_field :image, id: :post_image %>
-  </div>
+        <div class="field">
+          <%= form.label "詳細" %>
+          <%= form.text_area :description, class: "form-control" %>
+        </div>
 
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+        <div class="actions">
+          <%= form.submit "投稿", class: "btn btn-primary btn-lg btn-block" %>
+        </div>
+      </div><!-- End of col-sm-6 col-sm-offset-3 -->
+    </div><!-- End of row -->
+  </div><!-- End of container -->
 <% end %>

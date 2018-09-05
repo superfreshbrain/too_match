@@ -1,36 +1,33 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Posts</h1>
-
-<table>
-  <thead>
-    <tr>
-      <!-- <th>ユーザー名</th> -->
-      <th>名称</th>
-      <th>画像</th>
-      <th>詳細</th>
-      <th>コメント</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
+<div class="container">
+  <div class="row">
+    <h1>投稿一覧</h1>
     <% @posts.each do |post| %>
-      <tr>
-        <th></th>
-        <td><%= post.stuff_name %></td>
-        <td><%= image_tag(post.image_url) if post.image.present? %></td>
-        <td><%= post.description %></td>
-        <td><%= post.comment %></td>
+      <div class="content_post" style="background-image: url(<%= post.image %>);">
 
-        <td><%= link_to '表示', post %></td>
-        <td><%= link_to '編集', edit_post_path(post) %></td>
-        <td><%= link_to '削除', post, method: :delete, data: { confirm: '削除してよろしいですか?' } %></td>
-      </tr>
+        <div class="more">
+
+<!--          set an arrow image below!!!-->
+<!--          <span><%#= image_tag 'arrow_top.png' %></span>-->
+          <ul class="more_list">
+            <li><%= link_to '表示', post %></li>
+
+<!--            # deletable only if user is signed in && the one is your post-->
+            <% if user_signed_in? && current_user.id == post.user_id %>
+              <li><%= link_to '編集', edit_post_path(post) %></li>
+              <li><%= link_to '削除', post, method: :delete, data: { confirm: '削除してよろしいですか?' } %></li>
+            <% end %>
+          </ul>
+        </div>
+        <%= simple_format(post.description) %>
+        <span class="name">
+          <a href="/users/<%= post.user.id %>">
+            <span>投稿者</span><%= post.user.username %>
+          </a>
+        </span>
+      </div>
     <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to '新規投稿', new_post_path %>
+    <%= paginate(@posts) %>
+  </div>
+</div>

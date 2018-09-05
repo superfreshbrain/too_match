@@ -4,8 +4,7 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all
-
+    @posts = Post.includes(:user).page(params[:page]).per(5).order("created_at DESC")
   end
 
   # GET /posts/1
@@ -55,7 +54,7 @@ class PostsController < ApplicationController
   # DELETE /posts/1
   # DELETE /posts/1.json
   def destroy
-    @post.destroy
+    @post.destroy if @post.user_id == current_user.id
     respond_to do |format|
       format.html { redirect_to posts_url, notice: '投稿を削除しました。' }
       format.json { head :no_content }
@@ -63,7 +62,9 @@ class PostsController < ApplicationController
   end
 
   private
+
     # Use callbacks to share common setup or constraints between actions.
+
     def set_post
       @post = Post.find(params[:id])
     end
