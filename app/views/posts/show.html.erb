@@ -4,7 +4,7 @@
   <div class="row">
     <div class="content_post" style="background-image: url(<%= @post.image %>);">
 
-<!--      # ユーザーサインイン時 && 自分の投稿のみ削除可能にする-->
+<!--      # deletable only if user is signed in && the one is your post-->
       <% if user_signed_in? && current_user.id == @post.user_id %>
         <div class="more">
 
