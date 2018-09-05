@@ -1,24 +1,29 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>名称:</strong>
-  <%= @post.stuff_name %>
-</p>
+<div class="container">
+  <div class="row">
+    <div class="content_post" style="background-image: url(<%= @post.image %>);">
 
-<p>
-  <strong>画像:</strong>
-  <%= image_tag(@post.image_url) if @post.image.present? %>
-</p>
+<!--      # ユーザーサインイン時 && 自分の投稿のみ削除可能にする-->
+      <% if user_signed_in? && current_user.id == @post.user_id %>
+        <div class="more">
 
-<p>
-  <strong>説明:</strong>
-  <%= @post.description %>
-</p>
+    <!--      set an arrow image below!!!-->
+    <!--      <span><%#= image_tag 'arrow_top.png' %></span>-->
+          <ul class="more_list">
+            <li><%= link_to '編集', edit_post_path(@post) %></li>
+            <li><%= link_to '削除', @post, method: :delete, data: { confirm: '削除してよろしいですか?' } %></li>
+          </ul>
+        </div>
+      <% end %>
+      <%= simple_format(@post.description) %>
+      <span class="name">
+        <a href="/users/<%= @post.user.id %>">
+          <span>投稿者</span><%= @post.user.username %>
+        </a>
+      </span>
+    </div>
 
-<p>
-  <strong>コメント:</strong>
-  <%= @post.comment %>
-</p>
-
-<%= link_to '編集', edit_post_path(@post) %> |
-<%= link_to '戻る', posts_path %>
+    <%= link_to '戻る', posts_path, class: "btn btn-link btn-lg btn-block" %>
+  </div>
+</div>
