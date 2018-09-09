@@ -23,17 +23,31 @@
         </a>
       </span>
     </div>
+
     <div class="container">
       <div class="row">
         <% if current_user %>
-          <%= form_tag("posts/#{@post.id}/comments", method: :post) do %>
+          <%= form_tag("/posts/#{@post.id}/comments", method: :post) do %>
             <textarea class="form-control" cols="30" name="text" placeholder="コメントする" rows="2"></textarea>
             <input class="btn btn-primary btn-lg btn-block" type="submit" value="投稿">
           <% end %>
         <% end %>
+
+        <div class="comments">
+          <h4>＜コメント一覧＞</h4>
+          <% if @comments %> <!-- So to avoid an error when no comment exists -->
+            <% @comments.each do |comment| %>
+              <p>
+                <strong><%= link_to comment.user.username, "/users/#{comment.user_id}" %>：</strong>
+                <%= comment.text %>
+              </p>
+            <% end %>
+          <% end %>
+        </div>
       </div>
     </div>
 
     <%= link_to '戻る', posts_path, class: "btn btn-link btn-lg btn-block" %>
   </div>
 </div>
+
