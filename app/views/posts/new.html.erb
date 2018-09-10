@@ -1,5 +1,13 @@
-<h1>新規投稿</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
 
-<%= render 'form', post: @post %>
+      <h1>新規投稿</h1>
 
-<%= link_to '戻る', posts_path, class: "btn btn-link btn-lg btn-block" %>
+      <%= render 'form', post: @post %>
+
+      <%= link_to '戻る', posts_path, class: "btn btn-link btn-lg btn-block" %>
+
+    </div><!-- End of col-sm-6 col-sm-offset-3 -->
+  </div><!-- End of row -->
+</div><!-- End of container -->
