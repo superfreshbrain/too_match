@@ -15,6 +15,7 @@
     </ul>
   </div>
   <%= simple_format(post.description) %>
+  <%= render partial: "likes/like", locals: { post: post } %>
   <span class="name">
     <a href="/users/<%= post.user.id %>">
       <span>投稿者</span><%= post.user.username %>
