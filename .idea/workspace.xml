@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="539aea8a-55db-4ec9-af03-0437233956e5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/models/post.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/post.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/likes/create.js.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/likes/destroy.js.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/likes_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/likes_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/likes/_like.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/likes/_like.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/posts/_post.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/_post.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/posts/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/posts/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -35,41 +41,72 @@
     <session id="977325346">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.12" value="2" />
           <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="1" />
-          <entry key="erb" value="26" />
-          <entry key="rb" value="32" />
+          <entry key="erb" value="28" />
+          <entry key="rb" value="35" />
           <entry key="scss" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
-          <entry key="RHTML" value="26" />
-          <entry key="Ruby" value="32" />
+          <entry key="RHTML" value="28" />
+          <entry key="Ruby" value="35" />
           <entry key="SCSS" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="erb" value="1658" />
-          <entry key="rb" value="1600" />
+          <entry key="erb" value="2096" />
+          <entry key="rb" value="1765" />
           <entry key="scss" value="230" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="RHTML" value="1658" />
-          <entry key="Ruby" value="1600" />
+          <entry key="RHTML" value="2096" />
+          <entry key="Ruby" value="1765" />
           <entry key="SCSS" value="230" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="1287576214">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="rb" value="13" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Ruby" value="13" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="rb" value="34" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Ruby" value="34" />
         </counts>
       </usages-collector>
     </session>
@@ -80,10 +117,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/post.rb">
+        <entry file="file://$PROJECT_DIR$/app/models/place.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="45">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/comment.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -91,53 +155,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/like.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="95" selection-start-line="7" selection-start-column="95" selection-end-line="7" selection-end-column="95" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/likes_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/posts/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="56" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/posts/_post.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="61" lean-forward="true" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/likes/_like.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+            <state relative-caret-position="15">
+              <caret line="1" column="20" lean-forward="true" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -146,14 +165,14 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>tweet</find>
       <find>td</find>
       <find>post</find>
+      <find>tweet</find>
     </findStrings>
     <replaceStrings>
-      <replace>post</replace>
       <replace>li</replace>
       <replace>@post</replace>
+      <replace>post</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -170,18 +189,22 @@
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/comments_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/posts/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/posts/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/posts/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/posts/show.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/posts.scss" />
+        <option value="$PROJECT_DIR$/app/models/post.rb" />
+        <option value="$PROJECT_DIR$/app/views/likes/destroy.js.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/likes_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/like.rb" />
-        <option value="$PROJECT_DIR$/app/views/likes/_like.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/post.rb" />
+        <option value="$PROJECT_DIR$/app/views/likes/create.js.erb" />
+        <option value="$PROJECT_DIR$/app/views/posts/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/posts/_post.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/likes/_like.html.erb" />
+        <option value="$PROJECT_DIR$/db/migrate/20181003114530_create_places.rb" />
+        <option value="$PROJECT_DIR$/app/models/place.rb" />
+        <option value="$PROJECT_DIR$/app/models/like.rb" />
       </list>
     </option>
   </component>
@@ -206,7 +229,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -223,29 +245,30 @@
               <item name="too_match" type="b2602c69:ProjectViewProjectNode" />
               <item name="too_match" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="too_match" type="b2602c69:ProjectViewProjectNode" />
               <item name="too_match" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="likes" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="SearchEverywhereHistoryKey" value="_post&#9;FILE&#9;file:///Users/superfreshbrain/Desktop/3rd/Seminar2a/sc2018/too_match/app/views/posts/_post.html.erb&#10;index&#9;FILE&#9;file:///Users/superfreshbrain/Desktop/3rd/Seminar2a/sc2018/too_match/app/views/posts/index.html.erb&#10;like.rb&#9;FILE&#9;file:///Users/superfreshbrain/Desktop/3rd/Seminar2a/sc2018/too_match/app/models/like.rb&#10;comments&#9;FILE&#9;file:///Users/superfreshbrain/Desktop/3rd/Seminar2a/sc2018/too_match/app/controllers/comments_controller.rb&#10;likes&#9;FILE&#9;file:///Users/superfreshbrain/Desktop/3rd/Seminar2a/sc2018/too_match/app/controllers/likes_controller.rb&#10;routes&#9;FILE&#9;file:///Users/superfreshbrain/Desktop/3rd/Seminar2a/sc2018/too_match/config/routes.rb&#10;post.rb&#9;FILE&#9;file:///Users/superfreshbrain/Desktop/3rd/Seminar2a/sc2018/too_match/app/models/post.rb&#10;users&#9;FILE&#9;file:///Users/superfreshbrain/Desktop/3rd/Seminar2a/sc2018/too_match/app/controllers/users_controller.rb&#10;user&#9;FILE&#9;file:///Users/superfreshbrain/Desktop/3rd/Seminar2a/sc2018/too_match/app/models/user.rb&#10;comment.rb&#9;FILE&#9;file:///Users/superfreshbrain/Desktop/3rd/Seminar2a/sc2018/too_match/app/models/comment.rb&#10;comment&#9;FILE&#9;file:///Users/superfreshbrain/Desktop/3rd/Seminar2a/sc2018/too_match/db/migrate/20180905103050_create_comments.rb&#10;show&#9;FILE&#9;file:///Users/superfreshbrain/Desktop/3rd/Seminar2a/sc2018/too_match/app/views/posts/show.html.erb&#10;edit.html&#9;FILE&#9;file:///Users/superfreshbrain/Desktop/3rd/Seminar2a/sc2018/too_match/app/views/posts/edit.html.erb&#10;show.html&#9;FILE&#9;file:///Users/superfreshbrain/Desktop/3rd/Seminar2a/sc2018/too_match/app/views/posts/show.html.erb&#10;migration&#9;null&#9;null&#10;remove&#9;null&#9;null&#10;new.html&#9;FILE&#9;file:///Users/superfreshbrain/Desktop/3rd/Seminar2a/sc2018/too_match/app/views/devise/sessions/new.html.erb&#10;_&#9;FILE&#9;file:///Users/superfreshbrain/Desktop/3rd/Seminar2a/sc2018/too_match/app/views/posts/_form.html.erb&#10;index.ht&#9;FILE&#9;file:///Users/superfreshbrain/Desktop/3rd/Seminar2a/sc2018/too_match/app/views/posts/index.html.erb&#10;postrb&#9;FILE&#9;file:///Users/superfreshbrain/Desktop/3rd/Seminar2a/sc2018/too_match/app/models/post.rb&#10;userrb&#9;FILE&#9;file:///Users/superfreshbrain/Desktop/3rd/Seminar2a/sc2018/too_match/app/models/user.rb&#10;users.&#9;FILE&#9;file:///Users/superfreshbrain/Desktop/3rd/Seminar2a/sc2018/too_match/app/controllers/users_controller.rb" />
+    <property name="SearchEverywhereHistoryKey" value="posts&#9;FILE&#9;file:///Users/superfreshbrain/Desktop/3rd/Seminar2a/sc2018/too_match/app/controllers/posts_controller.rb&#10;controller&#9;FILE&#9;file:///Users/superfreshbrain/Desktop/3rd/Seminar2a/sc2018/too_match/app/controllers/posts_controller.rb&#10;_post&#9;FILE&#9;file:///Users/superfreshbrain/Desktop/3rd/Seminar2a/sc2018/too_match/app/views/posts/_post.html.erb&#10;index&#9;FILE&#9;file:///Users/superfreshbrain/Desktop/3rd/Seminar2a/sc2018/too_match/app/views/posts/index.html.erb&#10;like.rb&#9;FILE&#9;file:///Users/superfreshbrain/Desktop/3rd/Seminar2a/sc2018/too_match/app/models/like.rb&#10;comments&#9;FILE&#9;file:///Users/superfreshbrain/Desktop/3rd/Seminar2a/sc2018/too_match/app/controllers/comments_controller.rb&#10;likes&#9;FILE&#9;file:///Users/superfreshbrain/Desktop/3rd/Seminar2a/sc2018/too_match/app/controllers/likes_controller.rb&#10;routes&#9;FILE&#9;file:///Users/superfreshbrain/Desktop/3rd/Seminar2a/sc2018/too_match/config/routes.rb&#10;post.rb&#9;FILE&#9;file:///Users/superfreshbrain/Desktop/3rd/Seminar2a/sc2018/too_match/app/models/post.rb&#10;users&#9;FILE&#9;file:///Users/superfreshbrain/Desktop/3rd/Seminar2a/sc2018/too_match/app/controllers/users_controller.rb&#10;user&#9;FILE&#9;file:///Users/superfreshbrain/Desktop/3rd/Seminar2a/sc2018/too_match/app/models/user.rb&#10;comment.rb&#9;FILE&#9;file:///Users/superfreshbrain/Desktop/3rd/Seminar2a/sc2018/too_match/app/models/comment.rb&#10;comment&#9;FILE&#9;file:///Users/superfreshbrain/Desktop/3rd/Seminar2a/sc2018/too_match/db/migrate/20180905103050_create_comments.rb&#10;show&#9;FILE&#9;file:///Users/superfreshbrain/Desktop/3rd/Seminar2a/sc2018/too_match/app/views/posts/show.html.erb&#10;edit.html&#9;FILE&#9;file:///Users/superfreshbrain/Desktop/3rd/Seminar2a/sc2018/too_match/app/views/posts/edit.html.erb&#10;show.html&#9;FILE&#9;file:///Users/superfreshbrain/Desktop/3rd/Seminar2a/sc2018/too_match/app/views/posts/show.html.erb&#10;migration&#9;null&#9;null&#10;remove&#9;null&#9;null&#10;new.html&#9;FILE&#9;file:///Users/superfreshbrain/Desktop/3rd/Seminar2a/sc2018/too_match/app/views/devise/sessions/new.html.erb&#10;_&#9;FILE&#9;file:///Users/superfreshbrain/Desktop/3rd/Seminar2a/sc2018/too_match/app/views/posts/_form.html.erb&#10;index.ht&#9;FILE&#9;file:///Users/superfreshbrain/Desktop/3rd/Seminar2a/sc2018/too_match/app/views/posts/index.html.erb&#10;postrb&#9;FILE&#9;file:///Users/superfreshbrain/Desktop/3rd/Seminar2a/sc2018/too_match/app/models/post.rb&#10;userrb&#9;FILE&#9;file:///Users/superfreshbrain/Desktop/3rd/Seminar2a/sc2018/too_match/app/models/user.rb&#10;users.&#9;FILE&#9;file:///Users/superfreshbrain/Desktop/3rd/Seminar2a/sc2018/too_match/app/controllers/users_controller.rb" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -375,12 +398,17 @@
       <updated>1536130440184</updated>
       <workItem from="1536130443091" duration="8419000" />
       <workItem from="1536745388076" duration="99000" />
-      <workItem from="1536745532835" duration="3257000" />
+      <workItem from="1536745532835" duration="5202000" />
+      <workItem from="1537090132554" duration="1781000" />
+      <workItem from="1537254373252" duration="1492000" />
+      <workItem from="1537321990462" duration="266000" />
+      <workItem from="1537494471471" duration="2361000" />
+      <workItem from="1538566075546" duration="1407000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21239000" />
+    <option name="totallyTimeSpent" value="30491000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -392,10 +420,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="738" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="738" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.498452" visible="true" weight="0.20274636" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.498452" visible="true" weight="0.21890146" />
       <window_info id="Structure" order="1" sideWeight="0.501548" side_tool="true" weight="0.24959612" />
       <window_info id="Favorites" order="2" sideWeight="0.501548" side_tool="true" weight="0.24959612" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -487,27 +515,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20180905103050_create_comments.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/comment.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -555,13 +562,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -583,15 +583,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20180912094810_create_likes.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20180912095000_create_likes.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20180912095437_add_likes_count_to_posts.rb">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20180912094810_create_likes.rb" />
     <entry file="file://$PROJECT_DIR$/test/models/post_test.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -607,20 +599,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/likes_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/like.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -628,31 +606,110 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/posts/_post.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="88" lean-forward="true" selection-start-line="10" selection-start-column="88" selection-end-line="10" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/posts/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/likes_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/likes/_like.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="12" lean-forward="true" selection-end-line="21" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/likes/create.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="85" selection-start-column="85" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/likes/destroy.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="102" selection-start-column="102" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/post.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/application_record.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20180912095000_create_likes.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20180912095437_add_likes_count_to_posts.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20180905103050_create_comments.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/likes/_like.html.erb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20181003114530_create_places.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/posts/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/models/like.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="56" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="56" />
+        <state relative-caret-position="15">
+          <caret line="1" column="20" lean-forward="true" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/posts/_post.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/models/place.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/comment.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="17" column="61" lean-forward="true" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
         </state>
       </provider>
     </entry>
